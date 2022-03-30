@@ -2,24 +2,36 @@ import React from 'react'
 import { View, Text, Image,  TouchableOpacity  } from 'react-native'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 
-export default function RestaurantItems({restaurantsData}) {
+export default function RestaurantItems({restaurantsData, navigation}) {
     return (
-        <TouchableOpacity activeOpacity={1} style={{marginBottom: 30 }}>
+        <>
             {restaurantsData.map((restaurant, index) => (
-                <View 
-                key={index}
-                style={{
-                    marginTop: 10,
-                    padding: 15,
-                    backgroundColor: 'white'
-                }}
-            >
-                <RestaurantImage image={restaurant.image_url}/>
-                <RestaurantInfo name={restaurant.name} rating={restaurant.rating}/>
-            </View>
+                <TouchableOpacity
+                    key={index} 
+                    activeOpacity={1} 
+                    style={{marginBottom: 30 }}
+                    onPress={() => navigation.navigate('RestaurantDetail', {
+                        name: restaurant.name,
+                        image: restaurant.image_url,
+                        price: restaurant.price,
+                        reviews: restaurant.review_count,
+                        rating: restaurant.rating,
+                        categories: restaurant.categories,
+                    })}
+                >   
+                    <View 
+                        style={{
+                            marginTop: 10,
+                            padding: 15,
+                            backgroundColor: 'white'
+                        }}
+                    >
+                        <RestaurantImage image={restaurant.image_url}/>
+                        <RestaurantInfo name={restaurant.name} rating={restaurant.rating}/>
+                    </View>
+                </TouchableOpacity>
             ))}
-            
-        </TouchableOpacity>
+        </>
     )
 }
 

@@ -1,12 +1,14 @@
 import React from 'react'
 import { View, Text, StyleSheet, Image, ScrollView } from 'react-native'
 import {Divider} from 'react-native-elements'
+import BouncyCheckbox from 'react-native-bouncy-checkbox'
 
 const styles = StyleSheet.create({
     menuItemStyle: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         margin: 20,
+        
     },
     titleStyle: {
         fontSize: 19,
@@ -16,20 +18,29 @@ const styles = StyleSheet.create({
 
 export default function MenuItem({foods}) {
     return (
-        <ScrollView showsVerticalScrollIndicator={false}>
+        <ScrollView vertical showsVerticalScrollIndicator={false} >
             {foods.map((food, index) => (
-                <View>
-                    <View 
-                        key={index}
-                        style={styles.menuItemStyle}
-                    >
+                <View key={index}>
+                    <View style={styles.menuItemStyle}>
+                        <BouncyCheckbox 
+                            iconStyle={{
+                            borderColor: 'lightgray',
+                            borderRadius: 0,
+                            }}
+                            fillColor='green'
+                        />
                         <FoodInfo food={food}/>
                         <FoodImage food={food}/>
                     </View>
-                    <Divider width={0.5} orientation='vertical'/>
+                    <Divider 
+                        width={0.5} 
+                        orientation='vertical' 
+                        style={{marginHorizontal: 20}}
+                    />
                 </View>
             ))}
         </ScrollView>
+        
         
     )
 }
