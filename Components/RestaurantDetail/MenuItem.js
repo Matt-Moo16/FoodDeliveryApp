@@ -2,6 +2,7 @@ import React from 'react'
 import { View, Text, StyleSheet, Image, ScrollView } from 'react-native'
 import {Divider} from 'react-native-elements'
 import BouncyCheckbox from 'react-native-bouncy-checkbox'
+import { useDispatch, useSelector } from 'react-redux'
 
 const styles = StyleSheet.create({
     menuItemStyle: {
@@ -16,21 +17,44 @@ const styles = StyleSheet.create({
     }
 })
 
-export default function MenuItem({foods}) {
+export default function MenuItem({foods, restaurantName, hideCheckbox, marginLeft}) {
+
+    const dispatch = useDispatch()
+    const selectItem = (item, checkboxValue) => 
+    dispatch({
+        type: 'ADD_TO_CART', 
+        payload: {
+            ...item, 
+            restaurantName: restaurantName, 
+            checkboxValue: checkboxValue
+        },
+    })  
+
+    const cartItems = useSelector((state) => state.cartReducer.selectedItems.items)
+
+    const isFoodInCart = (food, cartItems) => {
+        return Boolean(cartItems.find((item => item.title === food.title)))
+    }
+
     return (
         <ScrollView vertical showsVerticalScrollIndicator={false} >
             {foods.map((food, index) => (
                 <View key={index}>
                     <View style={styles.menuItemStyle}>
-                        <BouncyCheckbox 
-                            iconStyle={{
-                            borderColor: 'lightgray',
-                            borderRadius: 0,
-                            }}
-                            fillColor='green'
-                        />
+                        { hideCheckbox ? (<></>) : (
+                            <BouncyCheckbox 
+                                iconStyle={{
+                                borderColor: 'lightgray',
+                                borderRadius: 0,
+                                }}
+                                fillColor='green'
+                                onPress={(checkboxValue) => selectItem(food, checkboxValue)}
+                                isChecked={isFoodInCart(food, cartItems)}
+                            />
+                        )
+                    }
                         <FoodInfo food={food}/>
-                        <FoodImage food={food}/>
+                        <FoodImage food={food} marginLeft={marginLeft ? marginLeft : 0}/>
                     </View>
                     <Divider 
                         width={0.5} 
@@ -54,11 +78,11 @@ const FoodInfo = ({food}) => (
     
 )
 
-const FoodImage = ({food}) => (
+const FoodImage = ({food, marginLeft}) => (
     <View>
         <Image 
             source={{uri: food.image}}
-            style={{width: 100, height: 100, borderRadius: 8}}
+            style={{width: 100, height: 100, borderRadius: 8, marginLeft: marginLeft}}
         />
     </View>
 )

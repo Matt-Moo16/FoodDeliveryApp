@@ -11,7 +11,7 @@ export default function SearchBar({cityHandler}) {
             flexDirection: 'row',
         }}>
             <GooglePlacesAutocomplete
-                query={{key: 'AIzaSyA4O2pBIiCvQWyGWo2Wlx_G2e2cP1Eh40Y'}} 
+                query={{key: 'AIzaSyAfZzkyouNbiV1Ib2YmRrVNKUAjGa3urvg'}} 
                 onPress={(data, details = null) => {
                     console.log(data.description)
                     const city = data.description.split(',')[0]
