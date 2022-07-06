@@ -56,7 +56,7 @@ export default function Home({navigation}) {
                 <RestaurantItems restaurantsData={restaurantsData} navigation={navigation}/>
             </ScrollView>
             <Divider width={1}/>
-            <BottomTabs />
+            <BottomTabs navigation={navigation}/>
         </SafeAreaView>
     );
 }
