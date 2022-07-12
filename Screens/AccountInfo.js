@@ -12,10 +12,12 @@ const AccountInfo = ({navigation}) => {
         setIsEnabled(!isEnabled);
     }
 
+    
+
   return (
     <View style={{flex: 1, backgroundColor: isEnabled ? 'black' : '#f6f6f6'}}>
       <AccountHeader navigation={navigation} isEnabled={isEnabled} />
-      <DisplayColor isEnabled={isEnabled} toggleSwitch={toggleSwitch} />
+      {/*<DisplayColor isEnabled={isEnabled} toggleSwitch={toggleSwitch} />*/}
       <AccountCategories isEnabled={isEnabled} />
     </View>
   )
