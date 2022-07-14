@@ -44,4 +44,4 @@ If you wanted to run the application on your mobile device `expo` needs to be do
 
 ## Walk-Through + User Flow
 ---
-![Food-Deliver-App-Screenshot](./Users/MattMoore/Desktop/Food-Delivery-App-ScreenShot.png)
+![Food-Deliver-App-Screenshot](./MattMoore/Desktop/Food-Delivery-App-ScreenShot.png)
