@@ -5,9 +5,9 @@
  This app looks and acts just like your faviorte food delivery app (except you dont get the food at the end 😢). You are able to search your location and have local restaurants to choose from as well as a complete checkout flow.    
 
  ### Table Of Contents
- - [Technologies Used](https://github.com/Matt-Moo16/FoodDeliveryApp#%EF%B8%8F-technologies-used)
- - [Run It Locally](https://github.com/Matt-Moo16/FoodDeliveryApp#%EF%B8%8F-technologies-used)
- - [Walk-Through + User Flow](https://github.com/Matt-Moo16/FoodDeliveryApp#walk-through--user-flow)
+ - [Technologies Used](https://github.com/Matt-Moo16/FoodDeliveryApp#%EF%B8%8F--technologies-used)
+ - [Run It Locally](https://github.com/Matt-Moo16/FoodDeliveryApp#%EF%B8%8F-run-it-locally)
+ - [Walk-Through + User Flow](https://github.com/Matt-Moo16/FoodDeliveryApp#%EF%B8%8F-walk-through--user-flow)
 
 ## 🖥️  Technologies Used
 
