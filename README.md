@@ -4,24 +4,23 @@
  
  This app looks and acts just like your faviorte food delivery app (except you dont get the food at the end 😢). You are able to search your location and have local restaurants to choose from as well as a complete checkout flow.    
 
- ##### Table Of Contents
- - Technologies Used
- - Run It Locally 
- - Walk-Through + User Flow
+ ### Table Of Contents
+ - [Technologies Used](https://github.com/Matt-Moo16/FoodDeliveryApp#%EF%B8%8F-technologies-used)
+ - [Run It Locally](https://github.com/Matt-Moo16/FoodDeliveryApp#%EF%B8%8F-technologies-used)
+ - [Walk-Through + User Flow](https://github.com/Matt-Moo16/FoodDeliveryApp#walk-through--user-flow)
 
-## 🖥️ Technologies Used
+## 🖥️  Technologies Used
 
 - **React Native**
 - **Redux**
 -  **Firebase**
--  ##### API's Used
-    -  Yelp API
-    -  Google Places API
+-  **Yelp API**
+-  **Google Places API**
 
-## Run It Locally
+## 🏃‍♀️ Run It Locally
 
 
-##### Prerequisites 
+### Prerequisites 
 1. Make sure you have `node` installed. To verify this, run `node -v`. 
 2. Xcode needs to be installed. Having Xcode installed will also install the iOS Simulator. 
 3. Xcode Command Line Tools needs to be installed as well. Open Xcode, then choose "Preferences". Go to the Locations panel and install the tools by selecting the most recent version in the Command Line Tools dropdown.
@@ -30,7 +29,7 @@
 
 Here is a more detailed guide on [setting up the development environment](https://reactnative.dev/docs/environment-setup) if needed. 
 
-##### Instructions
+### Instructions
 **First-Time Setup**
 1. Clone this repository. This will create a local directory called `FoodDeliveryApp`.
 2. `cd` into your `FoodDeliveryApp` directory.
@@ -42,7 +41,7 @@ Once all above is done the app should be running locally and you should have ful
 If you wanted to run the application on your mobile device `expo` needs to be downloaded from your devices app store. [Expo Go](https://apps.apple.com/app/apple-store/id982107779) for iOS, and [Expo](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www) for Android. Once that is downloaded and you make an account you can scan the QR code on the **Metro Bundler** window that opens in your browser when you run the application on your local machine. This webpage should be have a *localhost* URL. (Ex: **localhost:19002**)
 
 
-## Walk-Through + User Flow
+## 🚶‍♂️ Walk-Through + User Flow
 
 
 **Main Screen Screenshot:**
