@@ -1,5 +1,5 @@
 # **Food Delivery App 🍜**
----
+
  Hello! Thank you for stopping by and checking out my **Food Delivery App**. It was built using [React Native](https://reactnative.dev/), [Redux](https://redux.js.org/), and [Firebase](https://firebase.google.com/). 
  
  This app looks and acts just like your faviorte food delivery app (except you dont get the food at the end 😢). You are able to search your location and have local restaurants to choose from as well as a complete checkout flow.    
@@ -10,7 +10,7 @@
  - Walk-Through + User Flow
 
 ## 🖥️ Technologies Used
----
+
 - **React Native**
 - **Redux**
 -  **Firebase**
@@ -19,7 +19,7 @@
     -  Google Places API
 
 ## Run It Locally
----
+
 
 ##### Prerequisites 
 1. Make sure you have `node` installed. To verify this, run `node -v`. 
@@ -43,17 +43,23 @@ If you wanted to run the application on your mobile device `expo` needs to be do
 
 
 ## Walk-Through + User Flow
----
 
-**Main Screen Screenshot**
+
+**Main Screen Screenshot:**
+
 ![Food-Delivery-App-ScreenShot](https://user-images.githubusercontent.com/65912593/179075398-a4873bd1-5e73-493e-bef1-1804ba3a176d.png)
 
 
-**Checkout Walk-Through**
+**Checkout Walk-Through:**
+
 ![Checkout-Flow](https://user-images.githubusercontent.com/65912593/179129100-97b8e321-c5d3-4c8e-b165-93fe504cf469.gif)
 
-**Main Screen Functionality Demo**
+
+**Main Screen Functionality Demo:**
+
 ![Main-Screen-Demo](https://user-images.githubusercontent.com/65912593/179136461-655e3dee-1aae-4c8f-9338-8894cac89ab7.gif)
 
-**Yelp API Functionality Demo**
+
+**Yelp API Functionality Demo:**
+
 ![Yelp-API-Functionality-Demo](https://user-images.githubusercontent.com/65912593/179136370-a06741f1-1068-4faa-a280-e69a43cff7e5.gif)
