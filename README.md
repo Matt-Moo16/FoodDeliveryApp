@@ -46,4 +46,6 @@ If you wanted to run the application on your mobile device `expo` needs to be do
 ---
 ![Food-Delivery-App-ScreenShot](https://user-images.githubusercontent.com/65912593/179075398-a4873bd1-5e73-493e-bef1-1804ba3a176d.png)
 
-![Food-Delivery-App-Screen-Recording](https://user-images.githubusercontent.com/65912593/179076577-02f5e080-7664-4ac2-8ed5-bfc226f0f114.mov)
+![Checkout-Flow](https://user-images.githubusercontent.com/65912593/179129100-97b8e321-c5d3-4c8e-b165-93fe504cf469.gif)
+
+![Main-Screen-Demo](https://gfycat.com/wellinformedbelovedaustralianshelduck)
